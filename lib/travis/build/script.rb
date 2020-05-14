@@ -58,7 +58,6 @@ module Travis
         travis_cmd
         travis_decrypt
         travis_download
-        travis_find_jdk_path
         travis_fold
         travis_footer
         travis_install_jdk
