@@ -70,7 +70,6 @@ module Travis
         travis_result
         travis_retry
         travis_setup_env
-        travis_setup_java
         travis_temporary_hacks
         travis_terminate
         travis_time_finish
