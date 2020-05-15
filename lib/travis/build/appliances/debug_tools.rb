@@ -29,7 +29,7 @@ module Travis
               sh.if "$(uname) = 'FreeBSD'" do
                 sh.echo "Setting up the debug environment."
                 sh.cmd "export ALWAYS_ASSUME_YES=YES", echo: false
-                sh.cmd "pkg install tmate", echo: true, assert: true
+                sh.cmd "pkg install tmate", sudo: true, echo: true, assert: true
               end
               sh.if "$(name) = 'Darwin'" do
                 sh.echo "We are setting up the debug environment. This may take a while..."
